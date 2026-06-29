@@ -1,8 +1,8 @@
-const UserCard = ()=> {
+const UserCard = (props)=> {
     return(
         <>
-            <h2>yasser</h2>
-            <p>reelvana@gmail</p>
+         <p>Name: {props.name}</p>
+         <p>Email: {props.email}</p>  
         </>
     )
 }
