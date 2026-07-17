@@ -1,13 +1,31 @@
 
-import ToggleButton from './ToggleButton';
 
+import ShoppingCart from './ShoppingCart';
 
-const App = () =>{
+const App = () => {
   return (
     <div>
-      <ToggleButton />
+      <ShoppingCart />
     </div>
   );
+};
+
+export default App;
+
+
+
+
+
+
+// import ToggleButton from './ToggleButton';
+
+
+// const App = () =>{
+//   return (
+//     <div>
+//       <ToggleButton />
+//     </div>
+//   );
 
 
 
@@ -53,7 +71,3 @@ const App = () =>{
 //         <button onClick={() => setCount(count - 1)}>ka jar</button>
 //     </div>
 //   )
-
-}
-
-export default App;
