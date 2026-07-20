@@ -1,11 +1,9 @@
-
-
-import ShoppingCart from './ShoppingCart';
+import GreetingTitle from './GreetingTitle';
 
 const App = () => {
   return (
     <div>
-      <ShoppingCart />
+      <GreetingTitle />
     </div>
   );
 };
