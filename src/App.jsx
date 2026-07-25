@@ -1,9 +1,9 @@
-import GreetingTitle from './GreetingTitle';
+import MouseTracker from './MouseTracker.jsx';
 
 const App = () => {
   return (
     <div>
-      <GreetingTitle />
+      <MouseTracker />
     </div>
   );
 };
