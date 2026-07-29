@@ -1,25 +1,15 @@
 import react, { useState, useEffect } from 'react';
-
 const WindowWidthTracker = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
+    const  handleResize = () => setWidth(window.innerWidth);
 
-    window.addEventListener('resize', handleResize);
-
-    return () => {
+    window.addEventListener('resize', handleRseize);
+     return () => {
       window.removeEventListener('resize', handleResize);
-    };
+     };
   }, []);
-
-  return (
-    <div>
-      <p>Window Width: {windowWidth}px</p>
-    </div>
-  );
+ return <p> window width: {width}px </p>
 };
-
 export default WindowWidthTracker;

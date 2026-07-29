@@ -1,9 +1,9 @@
-import MouseTracker from './MouseTracker.jsx';
+import Countdown from './Countdown.jsx';
 
 const App = () => {
   return (
     <div>
-      <MouseTracker />
+      <Countdown />
     </div>
   );
 };
