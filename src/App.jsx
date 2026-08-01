@@ -1,9 +1,10 @@
-import GitHubUserSearch from './GitHubUserSearch.jsx';
+import UserList from './UserList.jsx';
 
 const App = () => {
   return (
     <div>
-      <GitHubUserSearch />
+      <UserList />
+
     </div>
   );
 };
