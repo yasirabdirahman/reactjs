@@ -1,9 +1,9 @@
-import DoubleCounter from './DoubleCounter';
+import MultiStepForm from './MultiStepForm';
 
 const App = () => {
   return (
     <div>
-      <DoubleCounter />
+      <MultiStepForm />
     </div>
   );
 };
