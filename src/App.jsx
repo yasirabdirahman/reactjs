@@ -1,11 +1,24 @@
-import MultiStepForm from './MultiStepForm';
+import React, { useState } from 'react';
+import LanguageContext from './LanguageContext.js';
+import Greeting from './Greeting';
 
-const App = () => {
+function App() {
+  const [language, setLanguage] = useState('en');
+
+  const toggleLanguage = () => {
+    setLanguage((prevLang) => (prevLang === 'en' ? 'es' : 'en'));
+  };
+
   return (
-    <div>
-      <MultiStepForm />
-    </div>
+    <LanguageContext.Provider value={language}>
+      <button onClick={toggleLanguage}>
+        Switch to {language === 'en' ? 'Spanish' : 'English'}
+      </button>
+      <Greeting />
+    </LanguageContext.Provider>
   );
-};
+}
 
 export default App;
+
+

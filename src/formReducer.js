@@ -1,7 +1,7 @@
 // formReducer.js
 
 export const initialState = {
-  step: 1, 
+  step: 1, // Start at step 1
   firstName: '',
   lastName: '',
   email: '',
