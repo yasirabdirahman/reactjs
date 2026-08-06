@@ -1,13 +1,11 @@
-import React from 'react';
-import ContactApp from './exercise18/ContactApp';
+import TodoApp from './exercise19/TodoApp';
 
-function App() {
+const App = () => {
   return (
     <div>
-      <ContactApp />
+      <TodoApp />
     </div>
   );
-}
+};
 
 export default App;
-    
